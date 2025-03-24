@@ -56,7 +56,7 @@ export default function EventForm({ onSuccess = () => {} }){
       }
 
       alert("Event saved successfully!");
-      onSuccess(); // ✅ Call onSuccess to refresh event list in EventList.js
+      onSuccess(); 
       navigate("/events");
     } catch (error) {
       console.error("Error saving event:", error.response?.data || error);
