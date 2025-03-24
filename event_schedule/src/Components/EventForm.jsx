@@ -33,30 +33,6 @@ export default function EventForm({ onSuccess = () => {} }){
       alert("Error fetching event: " + (error.response?.data?.detail || "Unknown error"));
     }
   };
-  //   const handleSubmit = async () => {
-  //   try {
-  //     const token = localStorage.getItem("token");
-  //     if (!token) {
-  //       alert("User not authenticated. Please log in.");
-  //       return;
-  //     }
-
-  //     const headers = {
-  //       Authorization: `Token ${token}`,
-  //       "Content-Type": "application/json",
-  //     };
-
-  //     if (id) {
-  //       await axios.put(`${API_BASE_URL}/events/${id}/`, event, { headers });
-  //     } else {
-  //       await axios.post(`${API_BASE_URL}/events/`, event, { headers });
-  //     }
-  //     navigate("/events");
-  //   } catch (error) {
-  //     console.error("Error saving event:", error.response ? error.response.data : error);
-  //     alert("Error saving event: " + (error.response?.data?.detail || "Unknown error"));
-  //   }
-  // };
 
  
   const handleSubmit = async () => {
