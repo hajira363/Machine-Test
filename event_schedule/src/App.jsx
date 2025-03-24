@@ -19,7 +19,7 @@ export default function App() {
   return (
     <Router>
       <div className="d-flex vh-100">
-        <div className="bg-primary text-white " style={{ width: "250px" ,marginTop:'100px'}}>
+        <div className="bg-primary text-white " style={{ width: "250px" ,marginTop:"100px",height:"121%"}}>
           <Sidebar />
         </div>
 
